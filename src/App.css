@@ -1,38 +1,74 @@
-.App {
-  text-align: center;
-}
+@import url('https://fonts.googleapis.com/css?family=Roboto');
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+html {
+	height: 100%!important;
+	overflow-x: hidden;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.header {
+	height: 100%!important;
+	padding-left: 20vw;
+	padding-top: 100px;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+body {
+	background: linear-gradient(180deg, #2F0045, #552660);
+	background-attachment: fixed;
+	margin: 0px;
+	height: 100%!important;
 }
-
-.App-link {
-  color: #61dafb;
+input {
+	background-color: #380D4A;
+	border: solid 1.5px #4D1366;
+	height: 50px;
+	border-top-right-radius: 0px;
+	border-bottom-right-radius: 0px;
+	border-top-left-radius: 5px;
+	border-bottom-left-radius: 5px;
+	width: 400px;
+	padding: 0px;
+	color: #FFF;
+	box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	text-indent: 30px;
+	margin-bottom: 20px;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+::placeholder {
+	color: #745680;
+}
+input:focus, button:focus {
+	outline: none;
+}
+button {
+	cursor: pointer;
+	position: absolute;
+	font-size: 20px;
+	height: 50px;
+	width: 50px;
+	border-top-right-radius: 5px;
+	border-bottom-right-radius: 5px;
+	border-top-left-radius: 0px;
+	border-bottom-left-radius: 0px;
+	border: solid 1.5px #4D1366;
+	background-color: #4D1366;
+	padding: 0px;
+	margin: 0px;
+	color: #FFF;
+	transition: all .3s cubic-bezier(.8,.03,.25,1);
+}
+button:hover {
+	width: 70px;
+}
+.resultItem {
+  color: #FFF;
+  font-size: 18px;
+  padding-bottom: 10px;
+  width: 150px;
+  border-bottom: 1.5px solid #745680;
+}
+h1 {
+	font-family: 'Roboto';
+	font-size: 25px;
+	color: #FFF;
+	margin-top: 0px!important;
+  margin-bottom: 30px;
+  text-align: start;
 }
