@@ -37,7 +37,7 @@ export default class App extends Component {
 				<input placeholder="Ex: Add your text here..." onChange={this.onChange}/>
 				<button onClick={this.handleClick}>+</button>
 
-        {value && !results && <div>No records found...</div>}
+        {value && results.length === 0 && <div className="resultItem">No records found...</div>}
 				
         { results && value && 
         results.map((item, id) =>
